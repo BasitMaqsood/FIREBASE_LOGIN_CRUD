@@ -30,7 +30,7 @@ const Contact = () => {
         }
       });
     else
-      firebaseObj.child(`contacts/${currentId}`).set(obj, (err) => {
+      firebaseObj.firebase.child(`contacts/${currentId}`).set(obj, (err) => {
         if (err) {
           console.log(err);
         }
